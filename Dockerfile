@@ -4,6 +4,10 @@ FROM node:7-onbuild
 # set maintainer
 LABEL maintainer "crudsinfotechng@gmail.com"
 
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install -y docker-ce
+
 # set a health check
 HEALTHCHECK --interval=5s \
             --timeout=5s \
