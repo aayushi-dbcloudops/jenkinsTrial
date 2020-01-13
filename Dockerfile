@@ -7,7 +7,7 @@ RUN curl -fsSLO https://get.docker/builds/Linux/x86_64/docker-17.04.0-ce.tgz \
   && rm -r docker docker-17.04.0-ce.tgz
  
 # set maintainer
-LABEL maintainer "crudsinfotechng@gmail.com"
+LABEL maintainer "crudsinnfotechng@gmail.com"
 
 RUN apt-get update && apt-get upgrade -y
 
